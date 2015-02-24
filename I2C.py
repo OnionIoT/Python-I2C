@@ -10,7 +10,7 @@ def reverseByteOrder(data):
         data >>= 8
     return val
 
-def get_i2c_device(address, busnum=None, **kwargs):
+def get_device(address, busnum=None, **kwargs):
     """Return an I2C device for the specified address and on the specified bus.
     If busnum isn't specified, the default I2C bus is 0
     """
